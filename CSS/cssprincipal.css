@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Niagara Solid";
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #11111c;
+    min-height: 100vh;
+    position: relative;
+}
+
+div.containermarquee{
+    width: 100%;
+    height: 100%;
+}
+marquee {
+    height: 100vh;
+}
+.bolamarquee{
+    width: 240px;
+    height: 226px;
+    background:url("https://images.vexels.com/media/users/3/143390/isolated/lists/6e77e1e50898b0f14d32e17646332a01-dvd-logo-blue.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+div.caixovidro{
+    position: absolute;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: rgba(30, 144, 255, 0.3);
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    color: beige;
+    text-transform: capitalize;
+
+}
