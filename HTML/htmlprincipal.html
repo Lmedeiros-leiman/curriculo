@@ -7,16 +7,35 @@
 </head>
 <body>
 
-<div class="containermarquee">
-        <marquee behavior="alternate" scrollamount="5">
-            <marquee behavior="alternate" scrollamount="5"
-            direction="down">
-                <div class="bolamarquee"></div>
-            </marquee>
-        </marquee>
-</div>
-
-    <div class="caixovidro"> Algum conteudo</div>
+    <header>
+        <svg class="almondega" viewBox="0 0 800 500" preserveAspectRatio="none" width="1500px" id="almondega">
+            <!-- SVG feito com auxilio de um gerador de almondegas:
+                https://passionhacks.com/blob-maker/?n=1&e=9&gw=6&se=65&g=ff0000|ff00ff&o=0
+            -->
+            <g transform="translate(144.39484405517578, -5.77044677734375)">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: rgb(255, 0, 0);"></stop>
+                        <stop offset="100%" style="stop-color: rgb(255, 0, 255);"></stop>
+                    </linearGradient>
+                </defs>
+                <path fill="url(#gradient)">
+                        <animate attributeName="d"
+                                 dur="1000s"
+                                 repeatCount="indefinite"
+                                 values="
+                                    M440,326.5Q433,403,358,421Q283,439,233.5,402Q184,365,142,334.5Q100,304,77,241.5Q54,179,102,128Q150,77,213.5,86Q277,95,339.5,108.5Q402,122,424.5,186Q447,250,440,326.5Z;
+                                    M422,329Q438,408,355.5,394.5Q273,381,208.5,407.5Q144,434,81.5,384Q19,334,72,269.5Q125,205,131.5,130Q138,55,205.5,87Q273,119,339.5,119Q406,119,406,184.5Q406,250,422,329Z;
+                                    M403,314.5Q404,379,347,427Q290,475,212,463Q134,451,75.5,393Q17,335,25,253Q33,171,82.5,108Q132,45,209,45.5Q286,46,318.5,106Q351,166,376.5,208Q402,250,403,314.5Z;
+                                    M370.5,295Q358,340,315.5,360Q273,380,201,420Q129,460,115,382Q101,304,72.5,239.5Q44,175,109.5,147Q175,119,225.5,109.5Q276,100,312.5,133.5Q349,167,366,208.5Q383,250,370.5,295Z;
+                                    M424,330.5Q441,411,361,419Q281,427,215.5,425.5Q150,424,87.5,378Q25,332,28,251Q31,170,102,143Q173,116,226,100Q279,84,340.5,103Q402,122,404.5,186Q407,250,424,330.5Z;
+                                    M440,326.5Q433,403,358,421Q283,439,233.5,402Q184,365,142,334.5Q100,304,77,241.5Q54,179,102,128Q150,77,213.5,86Q277,95,339.5,108.5Q402,122,424.5,186Q447,250,440,326.5Z;
+                        "></animate>
+                </path>
+            </g>
+        </svg>
+        <div class="caixovidro"> Algum conteudo</div>
+    </header>
 
 </body>
 </html>

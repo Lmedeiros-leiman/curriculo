@@ -5,48 +5,49 @@
     font-family: "Niagara Solid";
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     background: #11111c;
     min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
-
-div.containermarquee{
-    width: 100%;
-    height: 100%;
-}
-marquee {
+body header{
+    position: inherit;
     height: 100vh;
-}
-.bolamarquee{
-    width: 240px;
-    height: 226px;
-    background:url("https://images.vexels.com/media/users/3/143390/isolated/lists/6e77e1e50898b0f14d32e17646332a01-dvd-logo-blue.png");
-
-    background-repeat: no-repeat;
-    background-position: center;
-
-
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 div.caixovidro{
-    position: absolute;
+
     border: 1px solid blue;
     border-radius: 10px;
     background-color: rgba(30, 144, 255, 0.3);
     backdrop-filter: blur(10px);
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    width: 50%;
-    height: 50%;
+
+    width: 50vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: xxx-large;
     color: beige;
     text-transform: capitalize;
+
+}
+svg.almondega{
+    position: absolute;
+    top: -50%; left: -30%;
+    animation: ease 120s almondega infinite alternate-reverse;
+}
+@keyframes almondega {
+    0%   { transform: scale(1)   translate(10px, -30px); }
+    38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+    40%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+    78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+    80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+    100% { transform: scale(1)   translate(10px, -30px); }
 
 }
