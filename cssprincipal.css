@@ -1,77 +1,74 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Times New Roman"
+    box-sizing: content-box;
+    transition: all 0ms ease;
 }
-body{
 
-    background: #11111c;
+body{
     min-height: 100vh;
-    position: relative;
     overflow-x: hidden;
 }
-body header{
-    position: inherit;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header{
 
-    background-image: url("/imagens/5577275.jpg");
-    background-attachment: fixed;
+    height: 90vh;
+    background-image: url("/imagem-introducao.jpg");
+    background-repeat: no-repeat;
     background-position: center;
-
-
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: aliceblue;
 }
-div.caixavidro{
-
-    border: 1px solid blue;
-    border-radius: 10px;
-    background-color: rgba(30, 144, 255, 0.3);
-    backdrop-filter: blur(10px);
-
-    min-width: 640px;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 150%;
-    color: yellow;
-    text-transform: capitalize;
-    transition: all 1s ease;
-    text-align: center;
-
-}
-@media  only screen and (max-width: 660px){
-    div.caixavidro{
-        width: 100vw;
-        min-width: 0px;
-
-    }
-}
-
-.caixavidro h5, .caixavidro h3{
-    color: whitesmoke;
-}
-
-svg.almondega{
+tampaheader{
     position: absolute;
-    top: -40%; right: 0;
-    animation: ease 120s almondega infinite alternate-reverse;
-}
-@keyframes almondega {
-    0%   { transform: scale(1)   translate(10px, -30px); }
-    38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
-    40%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
-    78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
-    80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
-    100% { transform: scale(1)   translate(10px, -30px); }
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(75, 74, 74, 0.4);
+    backdrop-filter: blur(1px);
+
+    z-index: 1;
 
 }
-footer{
-    height: 100vh;
+textoheader{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 10%;
+    left: 5%;
+
+
+    z-index: 2;
+}
+header nav{
+    position: absolute;
+    background-color: royalblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    line-height: 2rem;
+    z-index: 2;
+}
+header nav ul{
+
+}
+header nav ul a{
+    padding-left: 2rem;
+    font-family:monospace;
+}
+header h4{
+
+    line-height: 2rem;
+    letter-spacing: 0.33em;
+    font:  24px/1.4em sans-serif;
+}
+header h1{
+    font: bold 88px/1.4em serif;
+}
+header h3{
 }
