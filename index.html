@@ -9,27 +9,71 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <a>Sobre</a>
-                <a>Formação e experiência</a>
-                <a>Habilidades e idiomas</a>
-                <a>Contato</a>
-            </ul>
-        </nav>
+        <main>
+                <!-- NAV-Menu Padrão -->
 
-        <tampaheader></tampaheader>
-        <textoheader>
-            <h4>Olá! Eu sou</h4>
-            <h1>Leonardo Medeiros.</h1>
-            <h3>Estudante das tecnologias da informação.</h3>
-        </textoheader>
+            <nav class="normal">
+                <ul><a>Sobre</a> </ul>
+                <ul><a>Formação e experiência</a> </ul>
+                <ul><a>Habilidades</a> </ul>
+                <ul><a>Contato</a> </ul>
+            </nav>
+                <!-- NAV-Menu mobile -->
+
+            <nav class="mobile">
+                <ul class="nome">Leonardo Medeiros</ul>
+                <ul class="hamburguer" onclick="alterarmodal()">
+                    <div class="barra1"></div>
+                    <div class="barra2"></div>
+                    <div class="barra3"></div>
+                </ul>
+
+            </nav>
+                <!--Corpo do header. -->
+
+            <div>
+                <div class="modal">
+                    <ul><a>Sobre</a> </ul>
+                    <ul><a>Formação e experiência</a> </ul>
+                    <ul><a>Habilidades</a> </ul>
+                    <ul><a>Contato</a> </ul>
+
+                </div>
+                <div>
+
+                    <h3>Estudante das tecnologias da informação.</h3>
+                    <h3>Desenvolvedor de Software | Análista de sistemas</h3>
+                    <h1>Leonardo Medeiros.</h1>
+                    <h4> Olá! <text>Eu sou:</text> </h4>
+                </div>
+
+            </div>
+
+
+        </main>
+        <script>
+            const modal = document.getElementsByClassName("modal")[0];
+            function alterarmodal(){
+                modal.classList.toggle("aberto");
+            }
+        </script>
     </header>
 
 
 
 
-<footer>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
 
 
 

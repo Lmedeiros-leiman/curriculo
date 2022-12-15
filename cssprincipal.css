@@ -4,71 +4,126 @@
     box-sizing: content-box;
     transition: all 0ms ease;
 }
-
 body{
     min-height: 100vh;
+    color: blue;
     overflow-x: hidden;
 }
-header{
+header h4{
+    line-height: 2rem;
+    letter-spacing: 0.33em;
+    font:  24px/1.4em sans-serif;
+    color: #bdf6fc;
+    font-weight: bolder;
+    display: inline;
 
-    height: 90vh;
+}
+text{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+header h1{
+    font: bold 88px/1.4em serif;
+    color: dodgerblue;
+}
+header h3{
+    padding-left: 1.5rem;
+    color: lightsteelblue;
+}
+header main div{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
     background-image: url("imagem-introducao.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
-    color: aliceblue;
+    height: 90vh;
 }
-tampaheader{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-
-    background-color: rgba(75, 74, 74, 0.4);
-    backdrop-filter: blur(1px);
-
-    z-index: 1;
-
+header main div div {
+    background: rgba(44, 42, 42, 0.333);
+    width: 100vw;
+    padding-left: 1.8rem;
+    padding-bottom: 16vh;
 }
-textoheader{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    bottom: 10%;
-    left: 5%;
-
-
-    z-index: 2;
-}
-header nav{
-    position: absolute;
+header main nav.normal{
     background-color: royalblue;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: large;
-    line-height: 2rem;
-    z-index: 2;
 }
-header nav ul{
+header main nav.normal ul {
+    font-family: "Times New Roman";
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bolder;
+    transition: all 0.5s;
+    font-size: x-large;
+    margin: 1rem;
+    margin-inline: 3%;
+    color: #bdf6fc;
+    padding: 0.2rem;
+    border-radius: 10px;
+    padding-inline: 0.5rem;
+}
+header main nav.normal ul:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    outline: 1px dotted #bdf6fc;
+}
+header main nav.mobile{
+    background-color: royalblue;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: xx-large;
+}
+header main nav.mobile ul.hamburguer{
+    margin: auto 0;
+    cursor:pointer;
+}
+header main nav.mobile ul.hamburguer div{
+    margin: 6px 2rem 0;
+    background: whitesmoke;
+    width: 30px;
+    height: 3px;
+}
+header main div.modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    transition: all 1s;
+    z-index: 10;
+    background: rgba(65, 105, 225, 0.3);
+}
+header main div.modal ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+header main div.modal.aberto{
+    left: 0;
+}
 
-}
-header nav ul a{
-    padding-left: 2rem;
-    font-family:monospace;
-}
-header h4{
+@media only screen and (max-width: 750px) {
+    header main nav.normal{
+        display: none;
+    }
 
-    line-height: 2rem;
-    letter-spacing: 0.33em;
-    font:  24px/1.4em sans-serif;
+    header main nav.mobile{
+        display: flex;
+    }
 }
-header h1{
-    font: bold 88px/1.4em serif;
+@media  only screen and (max-width: 215px) {
+    body{
+        overflow: auto;
+    }
 }
-header h3{
-}
+
+
