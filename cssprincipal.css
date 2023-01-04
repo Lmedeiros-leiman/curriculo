@@ -1,160 +1,83 @@
-:root {
-    --cor-principal: #4169e1; /* Royalblue */
-    --cor-leve: #87ceeb; /* LightSkyBlue */
-    --cor-escura: #00008b; /* DarkBlue */
-    --cor-contraste: #ffffff; /* White */
-}
 *{
-    padding:0;
-    margin: 0;
     box-sizing: border-box;
-    font-weight: normal;
-
-}
-body{
-    max-width:100vw ;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-}
-img{
-    width: 100%;
-    height: 100%;
+    margin:0;
+    padding: 0;
+    z-index: 5;
+    font-family: Arial;
 }
 
-h1{
-    font-family: Georgia,Serif;
-    color: var(--cor-principal);
-    font-weight: bolder;
-}
-h2{
-    color: var(--cor-leve);
-
-    font-family: Calibri, Arial;
-    padding-left: 1.5rem;
-}
-h2.estudante{
-    color: var(--cor-contraste);
-    font-size: smaller;
-}
-h3{
-
-    font-family: Verdana,Arial;
-
-}
-.container{
+ul, li {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    list-style: none;
 
 }
-header{
-    position: relative;
-    width: 100vw;
-    height: 85vh;
+a{
+    margin-left: 1rem ;
 
 }
-header aside{
-
-    background-color: var(--cor-principal);
-    min-width: 30%;
-
+.icones{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+    align-self: center;
+}
+
+.icones *{
+    margin-top: .5rem;
+    cursor: pointer;
 
 }
-.imagemsvg{
+header.inicio{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--cor-contraste);
-
-}
-.educacao h3, h3.educacao{
-    color: var(--cor-escura);
-    line-height: 0.8rem;
-    padding-inline: 5rem;
-    font-weight: lighter;
-    font-size: smaller;
-
-}
-
-
-main{
-    position: relative;
-    background-image: url("imagem-introducao.jpg");
+    width: 100%;
+    min-height: 90vh;
+    background:url("imagem-introducao.jpg");
+    background-attachment:fixed ;
+    background-size: cover;
     background-position: center;
-    background-size: 100%;
+    position: relative;
+    z-index: 4;
 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
+}
+header  .apresentacao{
+
+    color: red;
+    margin-left: 10%;
+    margin-top: 12%;
+}
+.apresentacao h1{
+    color: royalblue;
+    font-family: "Cooper Black";
+    text-transform: capitalize;
+}
+.apresentacao h2{
+    color: gainsboro;
+
+}
+.nome{
+    font-size: xx-large;
+}
+.tampa{
+    position: absolute;
+    top:0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+    z-index: 4;
 }
-.overlay{
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%; width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 30% 0 0 1.5rem;
+.apresentacao *{
+    color: lightsteelblue;
 }
-header aside{
-
+picture{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border-radius: 50%;
 }
-.educacao{
-    padding-bottom: 30%;
-}
-.links{
-    padding: 0.5rem 0 0.5rem 0;
-}
-.links img{
-    width: 25px;
-    height: 25px;
-    margin-right: 0.8rem;
-    cursor: pointer;
-    transition: all 0.7s;
+picture img{
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
 
-}
-.links img:hover{
-    filter: invert();
-    cursor: pointer;
-
-}
-
-
-button{
-    border:1px solid black;
-    cursor: pointer;
-
-
-}
-@media only screen and (max-width: 600px) {
-    .container{
-        flex-direction: column;
-    }
-    header main{
-        height:100vh;
-    }
-
-
-}
-
-
-
-
-
-
-footer{
-    display: flex;
-
-
-}
-
-
-.gpt{
-    background-color: rgb(16, 163, 127);
-    color: whitesmoke;
-    width: auto;
 }
