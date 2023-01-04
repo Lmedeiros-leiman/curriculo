@@ -5,26 +5,19 @@
     z-index: 5;
     font-family: Arial;
 }
-
-ul, li {
+ul, li, a {
     display: flex;
     list-style: none;
-
-}
-a{
     margin-left: 1rem ;
-
 }
 .icones{
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-
 .icones *{
-    margin-top: .5rem;
+    margin-top: .8rem;
     cursor: pointer;
-
 }
 header.inicio{
     display: flex;
@@ -37,22 +30,21 @@ header.inicio{
     position: relative;
     z-index: 4;
 
-
 }
 header  .apresentacao{
-
     color: red;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-top: 12%;
+    justify-content: center;
 }
 .apresentacao h1{
-    color: royalblue;
+    color: dodgerblue;
     font-family: "Cooper Black";
     text-transform: capitalize;
+    font-size: xxx-large;
 }
 .apresentacao h2{
     color: gainsboro;
-
 }
 .nome{
     font-size: xx-large;
@@ -70,14 +62,24 @@ header  .apresentacao{
     color: lightsteelblue;
 }
 picture{
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     position: relative;
     border-radius: 50%;
 }
-picture img{
+picture *{
     height: inherit;
     width: inherit;
     border-radius: inherit;
+
+}
+picture:first-child *{
+    border-radius: 10% ;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }

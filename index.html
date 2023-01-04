@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="cssprincipal.css">
-    <link rel="">
+    <link rel="stylesheet" href="blocos3D.css">
     <script defer src="carrosel-javascript-master/carrosel.js"></script>
     <title>Curriculo</title>
 </head>
@@ -25,41 +25,69 @@
     <main>
         <header class="inicio">
             <aside class="icones">
-                <picture><img src="linkedin.svg" alt="Linkedin"></picture>
-                <picture><img src="github.svg" alt="Github"></picture>
-                <picture><img src="whatsapp.svg" alt="whatsapp"></picture>
-                <picture><img style="border-radius: 0;" src="emailgoogle.svg" alt="Email"></picture>
+                <picture><a href="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/"><img src="linkedin.svg" alt="Linkedin"></a></picture>
+                <picture><a href="https://github.com/Lmedeiros-leiman"><img src="github.svg" alt="Github"></a></picture>
+                <picture><a href="https://wa.me/5551998877538"><img src="whatsapp.svg" alt="whatsapp"></a></picture>
+                <picture><a href="#"><img style="border-radius: 0;" src="emailgoogle.svg" alt="Email"></a></picture>
 
             </aside>
+            <div class="tampa"></div>
             <main class="apresentacao">
                 <H1 style="display: inline;" >olá! <h2 style="display:inline;">Eu sou:</h2></H1>
                 <h2  class="nome">Leonardo Medeiros</h2>
-                <h3 style="display: inline;">Desenvolvedor |<h4 style="display: inline;"> Estudante</h4></h3>
+                <h3 style="display: inline;">Desenvolvedor | Estudante </h3>
 
                 <h3>De engenharia de software</h3>
             </main>
-            <div class="tampa"></div>
+
         </header>
 
         <section>
                 <h2>Sobre mim:</h2>
             <div>
                 Estudante
+                Unniaselvi
+                Alcides maya
             </div>
             <div>
                 Desenvoledor
-            </div>
-            <div>
-                Designer
-            </div>
-            <div>
-
             </div>
 
         </section>
 
         <section>
             <h2>Minhas experiencias</h2>
+            <div>
+
+                ideia : quadrados que giram ao passar o mouse em cima -- confirmado.
+                ao clicar nestes quadrados, abrira um modal para expor melhor(?)
+                ao clicar nestes quadrados, nada acontecera(?)
+                ao clicar nestes quadrados, o usuário sera enviado para a página da empresa (?)
+
+                <div class="embrulhocaixas3D">
+                    <ul class="lista3D">
+
+                        <li class="itemlista3d">
+
+                            <div class="embrulhoitem3d">
+
+                                <div class="conteudofrontal" style="background-color: rebeccapurple ;border-radius: 20%;"></div>
+
+                                <div class="conteudolateral">
+
+                                    <header> Emprego</header>
+                                    <blockquote>
+                                        Descricao emprego
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
         </section>
         <style>
             .embrulhocarrosel{
@@ -77,41 +105,52 @@
                 text-align: center;
                 font-size: 1.2rem;
                 line-height: 46px;
-                background: whitesmoke;
+                background-color: rgba(169, 169, 169, 0.6);
                 border-radius: 50%;
                 transform: translateY(-50%);
                 position: absolute;
-
+                z-index: 6;
 
             }
             .embrulhocarrosel i:first-child{
                 top: 50%; left: -23px;
+                background-image: url('seta-carrosel.svg');
+                background-repeat: no-repeat;
+                background-size: 25%;
+                background-position: center;
+
                 display: none;
             }
             .embrulhocarrosel i:last-child{
                 top: 50%; right: -23px;
+                background-image: url('seta-carrosel.svg');
+                background-repeat: no-repeat;
+                background-size: 25%;
+                background-position: center;
+                transform-origin: 50% 25%;
+                transform:rotate(180deg);
             }
             .carrosel{
+                display: flex;
 
-                white-space: nowrap;
+                flex-wrap: nowrap;
+                flex-direction: row;
                 overflow: hidden;
                 cursor: grab;
                 scroll-behavior: smooth;
                 scroll-snap-align: center;
             }
             .carrosel > *{
+                flex-shrink: 0;
                 display: inline-flex;
                 height: 340px;
                 object-fit: cover;
                 margin-left: 14px;
                 user-select: none;
-                width: calc(100% / 3);
-
+                width: calc(100% / 1);
             }
-
             .carrosel > *:first-child{
                 margin-left: 0;
-
             }
 
             .bolas{
@@ -120,7 +159,6 @@
                 left: 50%;
                 bottom: -10%;
                 transform: translateX(-50%);
-
             }
             .bolas div{
                 width: 25px;
@@ -130,24 +168,14 @@
                 background:yellowgreen;
             }
 
-            @media screen and (max-width: 900px) {
-                .carrosel > * {
-                    width: calc(100% / 2);
-                }
-            }
-            @media screen and (max-width: 550px) {
-                .carrosel > * {
-                    width: 100%;
-                }
-            }
         </style>
         <section>
             <h2>Alguns projetos meus:</h2>
             <div class="carrosel">
-                <div style="width: 250px; height: 250px; background-color: red"></div>
-                <div style="width: 250px; height: 250px; background-color: red"></div>
-                <div style="width: 250px; height: 250px; background-color: red"></div>
-                <div style="width: 250px; height: 250px; background-color: red"></div>
+                <div style=" min-height: 250px; background-color: red"></div>
+                <div style=" min-height: 250px; background-color: red"></div>
+                <div style=" min-height: 250px; background-color: red"></div>
+                <div style=" min-height: 250px; background-color: red"> <div>Teste4</div></div>
             </div>
             <h4> Esta lista pretende apenas aumentar!</h4>
         </section>
@@ -159,6 +187,9 @@
 
     </main>
 
+    <footer>
+        Competir é legal, mas a harmonia da cooperação é muito melhor.
+    </footer>
 
 </body>
 </html>
