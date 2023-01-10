@@ -4,22 +4,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="cssprincipal.css">
     <link rel="stylesheet" href="blocos3D.css">
-    <script defer src="carrosel-javascript-master/carrosel.js"></script>
     <title>Curriculo</title>
 </head>
 
 <body>
-    <nav>
-        <li>
-            <ul>
-                <a>Link 1</a>
-                <a>Link 2</a>
-                <a>Link 3</a>
-                <a>Link 4</a>
-                <a>Link 5</a>
-                <a>Link 6</a>
-            </ul>
-        </li>
+    <nav class="barranavegacao">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#conhecimento">Conhecimentos</a>
+        <a href="#experiencia">Experiencias</a>
+        <a href="#contato">Contate-me</a>
     </nav>
 
     <main>
@@ -43,153 +36,92 @@
         </header>
 
         <section>
-                <h2>Sobre mim:</h2>
-            <div>
-                Estudante
-                Unniaselvi
-                Alcides maya
-            </div>
-            <div>
-                Desenvoledor
-            </div>
+                <h2 id="sobre">Sobre mim:</h2>
+            <li class="sobre">
+                <ul>
+                    <div>
+                        <h3>Muito prazer, eu sou Leonardo!</h3>
+                        <div>
+                            Sou um pequeno desenvolvedor iniciante na área de desenvolvimento.
+                            Busco algum dia tornar-me um nome conhecido na área,
+                            desenvolvendo aplicações que facilitam o dia a dia
+                            ou um grande sistema que unifica várias delas.
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div>
+                        <h3>Minhas Habilidades:</h3>
+                        <div>
+                            Ainda estou nos meus primeiros passos na área logo não tenho muito para me diferenciar dos outros estudantes.
+                            Porem não significa que algum traço para o futuro ja não esteja visivel.
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div>
+                        <h4>Conjunto Word - Excel</h4>
+                        <div>
+                            Os editores de texto do presente são muito interessantes, porem nunca me dediquei a realmente aprendê-los a fundo além do básico que se é apresentado para cada um.
+                            Não significa que sou imcapaz de utilizá-los, apenas que nunca realmente me dediquei a sério a fazer algo como uma planilha 100% automatizada no excel, ou em casos extremos, <a href="https://www.youtube.com/watch?v=eHCxgy4Gxkw">um jogo de vídeogame utilizando powerpoint</a>.
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div>
+                        <h4>Conhecimento em multiplas linguas</h4>
+                        <div>
+                            Consigo ler, falar e compreender quase que perfeitamente em inglês. Atualmente busco aprender e falar em chinês e espanhol, porem ainda sou um iniciante nestas linguas.
+                        </div>
+                    </div>
 
+                </ul>
+                <ul>
+                    <div>
+                        <h4>Conhecimento em edição de imagem</h4>
+                        <div>
+                            Consigo fazer pequenas montagens ou edições utilizando o programa GIMP.
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div>
+                        <h4>O Trio: HTML/CSS/JS</h4>
+                        <div>
+                            O trio que me introduzio para a programação, sendo este o conjunto que mais tenho interesse, utilizo os meus dias meticulosamente planejando a melhor maneira de apresentá-los,
+                            basta conferir quantas vezes revizei este mesmo webcurriculo no repositório onde está guardado, colocarei no futuro um pequeno contador aqui.
+                        </div>
+                    </div>
+                </ul>
+            </li>
         </section>
 
         <section>
-            <h2>Minhas experiencias</h2>
-            <div>
+            <h2 id="experiencia">Minhas experiencias no mecardo</h2>
+            <div class="experiencia">
+                <div>
 
-                ideia : quadrados que giram ao passar o mouse em cima -- confirmado.
-                ao clicar nestes quadrados, abrira um modal para expor melhor(?)
-                ao clicar nestes quadrados, nada acontecera(?)
-                ao clicar nestes quadrados, o usuário sera enviado para a página da empresa (?)
-
-                <div class="embrulhocaixas3D">
-                    <ul class="lista3D">
-
-                        <li class="itemlista3d">
-
-                            <div class="embrulhoitem3d">
-
-                                <div class="conteudofrontal" style="background-color: rebeccapurple ;border-radius: 20%;"></div>
-
-                                <div class="conteudolateral">
-
-                                    <header> Emprego</header>
-                                    <blockquote>
-                                        Descricao emprego
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
 
-
             </div>
-
         </section>
-        <style>
-            .embrulhocarrosel{
-                max-width: 12000px;
-                width: 90vw;
-                margin-top: 18px;
-                margin-bottom: 26px;
-                position: relative;
-                background-color: whitesmoke;
-            }
-            .embrulhocarrosel i{
-                height: 46px;
-                width: 46px;
-                cursor: pointer;
-                text-align: center;
-                font-size: 1.2rem;
-                line-height: 46px;
-                background-color: rgba(169, 169, 169, 0.6);
-                border-radius: 50%;
-                transform: translateY(-50%);
-                position: absolute;
-                z-index: 6;
-
-            }
-            .embrulhocarrosel i:first-child{
-                top: 50%; left: -23px;
-                background-image: url('seta-carrosel.svg');
-                background-repeat: no-repeat;
-                background-size: 25%;
-                background-position: center;
-
-                display: none;
-            }
-            .embrulhocarrosel i:last-child{
-                top: 50%; right: -23px;
-                background-image: url('seta-carrosel.svg');
-                background-repeat: no-repeat;
-                background-size: 25%;
-                background-position: center;
-                transform-origin: 50% 25%;
-                transform:rotate(180deg);
-            }
-            .carrosel{
-                display: flex;
-
-                flex-wrap: nowrap;
-                flex-direction: row;
-                overflow: hidden;
-                cursor: grab;
-                scroll-behavior: smooth;
-                scroll-snap-align: center;
-            }
-            .carrosel > *{
-                flex-shrink: 0;
-                display: inline-flex;
-                height: 340px;
-                object-fit: cover;
-                margin-left: 14px;
-                user-select: none;
-                width: calc(100% / 1);
-            }
-            .carrosel > *:first-child{
-                margin-left: 0;
-            }
-
-            .bolas{
-                position: absolute;
-                display: flex;
-                left: 50%;
-                bottom: -10%;
-                transform: translateX(-50%);
-            }
-            .bolas div{
-                width: 25px;
-                height: 25px;
-                margin-left: 10px;
-                border-radius: 50%;
-                background:yellowgreen;
-            }
-
-        </style>
         <section>
-            <h2>Alguns projetos meus:</h2>
-            <div class="carrosel">
-                <div style=" min-height: 250px; background-color: red"></div>
-                <div style=" min-height: 250px; background-color: red"></div>
-                <div style=" min-height: 250px; background-color: red"></div>
-                <div style=" min-height: 250px; background-color: red"> <div>Teste4</div></div>
-            </div>
-            <h4> Esta lista pretende apenas aumentar!</h4>
+            <h2 id="cotato">Contate-me</h2>
+
         </section>
 
-        <section>
-            <h2>Meus hobbies:</h2>
-        </section>
 
 
     </main>
 
-    <footer>
+    <footer id="footer">
         Competir é legal, mas a harmonia da cooperação é muito melhor.
     </footer>
+<script>
+    // nota para mim mesmo: não deixar a chave publica;
+    // para quem estiver lendo: a chave esta desigada e "protegida";
+    let chaveapigoogle = "AIzaSyATsTfsL_1zdHGVQkyunoWr6ZWB0EmqnqE";
+</script>
 
 </body>
 </html>

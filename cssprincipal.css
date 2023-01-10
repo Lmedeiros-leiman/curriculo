@@ -4,22 +4,53 @@
     padding: 0;
     z-index: 5;
     font-family: Arial;
+    list-style: none;
 }
-ul, li, a {
+body{
+    overflow-x: hidden;
+}
+#sobre, #conhecimentos ,#experiencia , #contato {
+    font-size: xx-large;
+    margin-top:  1vh;
+    margin-bottom: 2.5vh;
+    color: navy;
+}
+a{
+    display: inline;
+}
+.barranavegacao{
     display: flex;
     list-style: none;
-    margin-left: 1rem ;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: cornflowerblue;
+    padding-inline: 20%;
+}
+.barranavegacao a{
+    margin: 1%;
+    color: whitesmoke;
+    font-family: Bahnschrift;
+    cursor: pointer;
+}
+.barranavegacao a:hover{
+   text-decoration: dotted underline whitesmoke .25rem;
+
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: #06067b;
 }
 .icones{
     display: flex;
     flex-direction: column;
     align-self: center;
-}
-.icones *{
+}  .icones *{
     margin-top: .8rem;
     cursor: pointer;
-}
-header.inicio{
+}  header.inicio{
     display: flex;
     width: 100%;
     min-height: 90vh;
@@ -30,26 +61,21 @@ header.inicio{
     position: relative;
     z-index: 4;
 
-}
-header  .apresentacao{
+}  header .apresentacao{
     color: red;
     margin-left: 20%;
     margin-top: 12%;
     justify-content: center;
-}
-.apresentacao h1{
+}  .apresentacao h1{
     color: dodgerblue;
     font-family: "Cooper Black";
     text-transform: capitalize;
     font-size: xxx-large;
-}
-.apresentacao h2{
+}  .apresentacao h2{
     color: gainsboro;
-}
-.nome{
+}  .nome{
     font-size: xx-large;
-}
-.tampa{
+}  .tampa{
     position: absolute;
     top:0;
     left: 0;
@@ -57,23 +83,19 @@ header  .apresentacao{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.33);
     z-index: 4;
-}
-.apresentacao *{
+}  .apresentacao *{
     color: lightsteelblue;
-}
-picture{
+}  picture{
     height: 75px;
     width: 75px;
     position: relative;
     border-radius: 50%;
-}
-picture *{
+}  picture *{
     height: inherit;
     width: inherit;
     border-radius: inherit;
 
-}
-picture:first-child *{
+}  picture:first-child *{
     border-radius: 10% ;
 }
 section{
@@ -82,4 +104,62 @@ section{
     align-items: center;
     justify-content: center;
 
+}
+li.sobre{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+li.sobre ul{
+    margin-bottom: 2vh;
+}
+li.sobre h3{
+    font-size: x-large;
+}
+
+li.sobre ul:nth-child(even){
+    width: 30vw;
+
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-right:15vw;
+}
+li.sobre ul:nth-child(odd){
+    width: 20rem;
+    margin-left: 15vw;
+}
+li.sobre ul:first-child{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 0 0 8vh 0;
+    width: 50vw;
+    padding: 2.5vw;
+    outline: black double;
+}
+.experiencia{
+
+}
+.experiencia div{
+
+}
+
+
+
+
+
+footer{
+    width: 100vw;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    padding: 1vw;
+    text-align: center;
+    color: whitesmoke;
+    font-family: Bahnschrift;
+}
+li.sobre ul h3,li.sobre ul h4{
+    text-align: center;
+    font-size: larger;
+    color: cornflowerblue;
 }
