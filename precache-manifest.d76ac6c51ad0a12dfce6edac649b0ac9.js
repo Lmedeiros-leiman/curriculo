@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "653d16205e81710eca3b",
+    "revision": "2c6b5f9cd12af2d2c6c5",
     "url": "/curriculo/static/css/main.2a5a2583.chunk.css"
   },
   {
-    "revision": "653d16205e81710eca3b",
-    "url": "/curriculo/static/js/main.653d1620.chunk.js"
+    "revision": "2c6b5f9cd12af2d2c6c5",
+    "url": "/curriculo/static/js/main.2c6b5f9c.chunk.js"
   },
   {
     "revision": "205849d973eaa941ab0f",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/curriculo/static/media/cafe-frankfurt-germany.af32277e.jpg"
   },
   {
-    "revision": "1dfed89e1977789dfd029e062c6aec68",
-    "url": "/curriculo/static/media/Foto_perfil.1dfed89e.png"
+    "revision": "f77b5fb9307e3b487c48e6f395f3d4e6",
+    "url": "/curriculo/static/media/Foto_perfil.f77b5fb9.jpg"
   },
   {
     "revision": "06e733283fa43d1dd57738cfc409adbd",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/curriculo/static/media/github.a0b00583.svg"
   },
   {
-    "revision": "e6a8dcb96dd5c543132aea42bbac670e",
+    "revision": "28805498803ed3b0402756225a8eec7b",
     "url": "/curriculo/index.html"
   }
 ];

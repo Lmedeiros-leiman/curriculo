@@ -1,7 +1,7 @@
 {
   "main.css": "/curriculo/static/css/main.2a5a2583.chunk.css",
-  "main.js": "/curriculo/static/js/main.653d1620.chunk.js",
-  "main.js.map": "/curriculo/static/js/main.653d1620.chunk.js.map",
+  "main.js": "/curriculo/static/js/main.2c6b5f9c.chunk.js",
+  "main.js.map": "/curriculo/static/js/main.2c6b5f9c.chunk.js.map",
   "static/js/1.205849d9.chunk.js": "/curriculo/static/js/1.205849d9.chunk.js",
   "static/js/1.205849d9.chunk.js.map": "/curriculo/static/js/1.205849d9.chunk.js.map",
   "static/js/2.b979d2da.chunk.js": "/curriculo/static/js/2.b979d2da.chunk.js",
@@ -9,11 +9,11 @@
   "runtime~main.js": "/curriculo/static/js/runtime~main.222ea77f.js",
   "runtime~main.js.map": "/curriculo/static/js/runtime~main.222ea77f.js.map",
   "static/media/Cabecario.module.css": "/curriculo/static/media/cafe-frankfurt-germany.af32277e.jpg",
-  "static/media/Foto_perfil.png": "/curriculo/static/media/Foto_perfil.1dfed89e.png",
+  "static/media/Foto_perfil.jpg": "/curriculo/static/media/Foto_perfil.f77b5fb9.jpg",
   "static/media/logo.svg": "/curriculo/static/media/logo.06e73328.svg",
   "static/media/github.svg": "/curriculo/static/media/github.a0b00583.svg",
   "static/css/main.2a5a2583.chunk.css.map": "/curriculo/static/css/main.2a5a2583.chunk.css.map",
   "index.html": "/curriculo/index.html",
-  "precache-manifest.5f0f7896c09d4cc2e4f7c1aa048bb93a.js": "/curriculo/precache-manifest.5f0f7896c09d4cc2e4f7c1aa048bb93a.js",
+  "precache-manifest.d76ac6c51ad0a12dfce6edac649b0ac9.js": "/curriculo/precache-manifest.d76ac6c51ad0a12dfce6edac649b0ac9.js",
   "service-worker.js": "/curriculo/service-worker.js"
 }
