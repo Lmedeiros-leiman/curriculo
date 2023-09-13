@@ -12,7 +12,8 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import FotoPessoal from "@/Pages/Welcome/imagens e logos/fotopessoal.jpeg"
 import Projetos from "./Welcome/projetos";
 import SobreMim from "./Welcome/sobremim";
-const CurriculoPessoal = "#"
+
+import CurriculoPessoal from "@/Pages/Welcome/imagens e logos/LeonardoMedeirosLeiman.pdf"
 
 export default function Welcome({ CSFRtoken }) {
 
@@ -36,6 +37,7 @@ export default function Welcome({ CSFRtoken }) {
                                 Eu resolvo problemas de Software e as vezes de Hardware.
                             </h3>
                             <a href={CurriculoPessoal}
+                                target="_blank"
                                 className="bg-yellow-300 hover:bg-yellow-500 transition-colors delay-0 mt-5 text-blue-800 p-4 text-lg self-end rounded-full"
                             >Baixe meu curriculo <FontAwesomeIcon icon={faDownload} /> </a>
                         </div>
@@ -59,7 +61,7 @@ export default function Welcome({ CSFRtoken }) {
                     <div className="max-w-5xl mx-auto px-6 rounded-xl bg-opacity-50 border-white border-2 border-opacity-50 bg-gray-900 shadow-md shadow-black">
                         <div className="text-center mb-4">
                             <h2 className="text-3xl my-2 py-2 font-semibold text-white">
-                                Estou atuando como autônomo!
+                                Minhas área de atuação:
                             </h2>
                         </div>
                         <ul className="mb-4 space-y-2 list-disc list-inside text-gray-300 ">
@@ -122,3 +124,4 @@ export default function Welcome({ CSFRtoken }) {
         </>
     );
 }
+
