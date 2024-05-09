@@ -11,10 +11,53 @@ a > * {
 
 #navbar {
     display: flex;
+    width: 100vw;
+    text-align: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: aliceblue;
 }
 #navbar > .item {}
-#navbar > .item > a 
-{
+#navbar > .item > a {}
+
+#Logo{
+    color: white;
+    background-color: black;
+    height: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.grouper {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    background-color: red;
     
+    gap: 6px;
+}
+.grouper label{
+    display:none;
+}
+
+/* Introdução */
+#introducao 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+#introducao > main {
+    max-width: 500px;
+}
+
+#introducao > aside {
+    float: right;
+    clear: left;
 }
