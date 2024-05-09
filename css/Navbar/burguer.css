@@ -1,26 +1,64 @@
-#navbar .burguer {
-    width: 32px;
-    height: 32px;
-
+#burguer {
     background-color: transparent;
+    transition: all 0.5 ease-in-out;
+    width: 52px;
+    height: 48px;
+    background-color: transparent;
+
+    border: none;
     cursor: pointer;
+    order: -10;
+    z-index: 10;
 }
-#navbar .burguer div {
+#burguer > * {
+    
     position:absolute;
-    width: 32px;
-    height: 8px;
+    width: 52px;
+    height: 12px;
+    transition: all 0.5s ease-in-out;
 }
-#navbar .burguer :nth-child(1) {
+
+/* pra quando o menu estiver ABERTO */
+#burguer[state=open] :nth-child(1) {
+    background-color: green;
+
+}
+#burguer[state=open] :nth-child(2) {
+    background-color: red;
+}
+#burguer[state=open] :nth-child(3) {
+    bottom: 0;
+    height: 0;
+    background-color: yellow;
+}
+
+/* pra quando o menu estiver FECHADO */
+#burguer[state=closed] :nth-child(1) {
     top: 0;
     background-color: green;
 
 }
-#navbar .burguer :nth-child(2) {
+#burguer[state=closed] :nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
     background-color: red;
 }
-#navbar .burguer :nth-child(3) {
+#burguer[state=closed] :nth-child(3) {
     bottom: 0;
     background-color: yellow;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Laptop */
+@media only screen and (min-width: 768px) {
+    #burguer{
+        display: none;
+    }
+}
+/* PC desktop */
+@media only screen and (min-width: 1366px) {
+    
 }

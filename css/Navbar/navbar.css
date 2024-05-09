@@ -11,13 +11,16 @@
     border-radius: 9999px;
     font-size: larger;
     font-weight: bold;
+
+    order: 10;
 }
 
 #navbar {
     
     display: flex;
+    
     min-width: 360px;
-
+    margin: 0 auto 0 auto;
     padding: 16px;
 
     width: 100vw;

@@ -3,3 +3,22 @@
 
 @import url(./Navbar/navbar.css);
 @import url(./Apresentacao/apresentacao.css);
+
+
+
+/* Mobile */
+/* É o padrão :P */
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    
+  }
+  /* Laptop */
+  @media only screen and (min-width: 768px) {
+    
+  }
+  /* PC desktop */
+  @media only screen and (min-width: 1367px) {
+    
+  }
+
