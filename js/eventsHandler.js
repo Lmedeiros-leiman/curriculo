@@ -1,6 +1,7 @@
 
 // TODO: passar a mudança de icone para uma classe em um arquivo exclusivo.
 // quando a pessoa clica para visualizar outra página
+
 let FavMetaTimeout;
 document.onblur = () => {
 
@@ -13,7 +14,7 @@ document.onblur = () => {
         FavMetaTimeout = undefined
         // 1 minuto ainda parece muito agressivo.
         // mas ainda assim, é um detalhe pequeno e facil de perder.
-    }, 1000)
+    }, Segundo * 30)
     //
 }
 

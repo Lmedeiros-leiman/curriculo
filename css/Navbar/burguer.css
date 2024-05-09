@@ -21,6 +21,7 @@
 /* pra quando o menu estiver ABERTO */
 #burguer[state=open] :nth-child(1) {
     background-color: green;
+    top: 0;
 
 }
 #burguer[state=open] :nth-child(2) {
@@ -29,7 +30,6 @@
 #burguer[state=open] :nth-child(3) {
     bottom: 0;
     height: 0;
-    background-color: yellow;
 }
 
 /* pra quando o menu estiver FECHADO */
@@ -48,6 +48,30 @@
     background-color: yellow;
 }
 
+/* Menu aside */
+
+#sidebar[status=visible] {
+    
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 50px;
+
+    z-index: 3;
+}
+#sidebar[status=hidden] {
+    position: relative;
+    display: none;
+    flex-direction: row;
+    
+}
+
 /* Tablet */
 @media only screen and (min-width: 600px) {
     
@@ -57,7 +81,10 @@
     #burguer{
         display: none;
     }
-    
+    #sidebar{
+        position: relative;
+    }
+
 }
 /* PC desktop */
 @media only screen and (min-width: 1366px) {
