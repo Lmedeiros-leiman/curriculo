@@ -1,4 +1,9 @@
+@import url(../assets/fonts/fontImports.css);
 @import url(./reseter.css);
+
+#Logo {
+    font-family: "Ubuntu Mono",monospace;
+}
 
 a > * {
     cursor:pointer;
@@ -6,12 +11,10 @@ a > * {
 
 #navbar {
     display: flex;
+    justify-content: space-between;
 }
 #navbar > .item {}
 #navbar > .item > a 
 {
     
-}
-a > img {
-    vertical-align: middle;
 }
