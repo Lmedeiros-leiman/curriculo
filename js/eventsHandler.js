@@ -13,7 +13,7 @@ document.onblur = () => {
         FavMetaTimeout = undefined
         // 1 minuto ainda parece muito agressivo.
         // mas ainda assim, é um detalhe pequeno e facil de perder.
-    }, Segundo * 30)
+    }, 1000)
     //
 }
 
@@ -27,7 +27,6 @@ document.onfocus = () => {
     
 
     const CurrentHref = Favmeta.href.split("/")
-
 
     if (CurrentHref[CurrentHref.length - 1] === 'faviconblur.ico') {
         

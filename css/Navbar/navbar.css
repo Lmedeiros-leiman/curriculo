@@ -33,19 +33,13 @@
 #navbar > .item {}
 #navbar > .item > a {}
 
-#Logo{
-    
-}
-
 .grouper {
     display: flex;
     align-self: flex-end;
     justify-content: center;
     gap: 6px;
 }
-.grouper label{
-    display:none;
-}
+
 
 /* Introdução */
 #introducao 
@@ -63,4 +57,22 @@
 #introducao > aside {
     float: right;
     clear: left;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Laptop */
+@media only screen and (min-width: 768px) {
+    #Logo {
+        order: 0;
+    }
+    .grouper label{
+        display:none;
+    }
+}
+/* PC desktop */
+@media only screen and (min-width: 1366px) {
+    
 }
