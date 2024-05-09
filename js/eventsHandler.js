@@ -4,7 +4,10 @@ let FavMetaTimeout;
 document.onblur = () => {
     FavMetaTimeout = setTimeout(() => {
         Favmeta.href = "./assets/icons/faviconblur.ico"
-    }, Minuto * 2)
+        FavMetaTimeout = undefined
+        // 1 minuto ainda parece muito agressivo.
+        // mas ainda assim, é um detalhe pequeno e facil de perder.
+    }, Minuto)
     //
 }
 
