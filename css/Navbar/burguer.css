@@ -1,0 +1,26 @@
+#navbar .burguer {
+    width: 32px;
+    height: 32px;
+
+    background-color: transparent;
+    cursor: pointer;
+}
+#navbar .burguer div {
+    position:absolute;
+    width: 32px;
+    height: 8px;
+}
+#navbar .burguer :nth-child(1) {
+    top: 0;
+    background-color: green;
+
+}
+#navbar .burguer :nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+}
+#navbar .burguer :nth-child(3) {
+    bottom: 0;
+    background-color: yellow;
+}

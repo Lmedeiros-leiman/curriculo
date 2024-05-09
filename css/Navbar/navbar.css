@@ -1,0 +1,63 @@
+@import url(./burguer.css);
+
+#Logo {
+    font-family: "Ubuntu Mono",monospace;
+
+    color: white;
+    background-color: black;
+    height: fit-content;
+    height: fit-content;
+    padding: 0.6rem;
+    border-radius: 9999px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#navbar {
+    
+    display: flex;
+    min-width: 360px;
+
+    padding: 16px;
+
+    width: 100vw;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: aliceblue;
+}
+#navbar > .item {}
+#navbar > .item > a {}
+
+#Logo{
+    
+}
+
+.grouper {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    gap: 6px;
+}
+.grouper label{
+    display:none;
+}
+
+/* Introdução */
+#introducao 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+#introducao > main {
+    max-width: 500px;
+}
+
+#introducao > aside {
+    float: right;
+    clear: left;
+}

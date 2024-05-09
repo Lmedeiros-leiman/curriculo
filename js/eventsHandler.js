@@ -2,6 +2,11 @@
 // quando a pessoa clica para visualizar outra página
 let FavMetaTimeout;
 document.onblur = () => {
+
+    if (FavMetaTimeout) {
+        clearTimeout(FavMetaTimeout)
+    }
+
     FavMetaTimeout = setTimeout(() => {
         Favmeta.href = "./assets/icons/faviconblur.ico"
         FavMetaTimeout = undefined
@@ -16,7 +21,18 @@ document.onfocus = () => {
 
     if (FavMetaTimeout) {
         clearTimeout(FavMetaTimeout)
+
+        FavMetaTimeout = undefined
+        if (Favmeta.href === "./assets/icons/faviconblur.ico") 
+            {
+                Favmeta.href = "./assets/icons/faviconchange.ico"
+
+                FavMetaTimeout = setTimeout( () => {
+                    Favmeta.href = "./assets/icons/favicon.ico"
+                    FavMetaTimeout = undefined
+                }, 500)
+            }
+        
     }
-    FavMetaTimeout = undefined
-    Favmeta.href = "./assets/icons/favicon.ico"
+    
 }
