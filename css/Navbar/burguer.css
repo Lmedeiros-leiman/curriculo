@@ -49,27 +49,36 @@
 }
 
 /* Menu aside */
-
-#sidebar[status=visible] {
-    
+#sidebar{
+    transition: all 0.6s ease-in-out ;
     width: 100vw;
     height: 100vh;
-    top: 0;
     left: 0;
-    
-    position: absolute;
+    top:-100%;
+
     display: flex;
     flex-direction: column;
 
-    padding-top: 50px;
-
+    position: fixed;
+    
+    padding-top: 120px;
+    background-color: rgba(65, 105, 225, 0.65);
+    
+    
     z-index: 3;
 }
-#sidebar[status=hidden] {
-    position: relative;
-    display: none;
-    flex-direction: row;
-    
+#sidebar > * {
+    padding: 2rem;
+    color: whitesmoke;
+}
+a:link{
+    color:whitesmoke;
+}
+a:focus{
+    color: red;
+}
+a:visited{
+    color:crimson;
 }
 
 /* Tablet */
@@ -83,6 +92,21 @@
     }
     #sidebar{
         position: relative;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        width: min-content;
+        height: min-content;
+        background-color: transparent;
+        vertical-align: middle;
+        transition: none;
+    }
+    #sidebar label {
+        display: none;
+    }
+    #sidebar > * {
+        padding: 0;
     }
 
 }

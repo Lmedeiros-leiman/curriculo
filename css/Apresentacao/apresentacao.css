@@ -1,0 +1,18 @@
+
+/* Introdução */
+#introducao 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+#introducao > main {
+    max-width: 500px;
+}
+
+#introducao > aside {
+    float: right;
+    clear: left;
+}

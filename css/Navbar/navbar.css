@@ -3,61 +3,44 @@
 #Logo {
     font-family: "Ubuntu Mono",monospace;
 
-    color: white;
-    background-color: black;
+    font-style: italic;
     height: fit-content;
     height: fit-content;
     padding: 0.6rem;
     border-radius: 9999px;
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
-
+    z-index: 10;
     order: 10;
+
+    cursor: context-menu;
 }
+
 
 #navbar {
     
+    position:fixed;
+
     display: flex;
     
     min-width: 360px;
-    margin: 0 auto 0 auto;
-    padding: 16px;
-
     width: 100vw;
+
+    margin: 0 auto 0 auto;
+    padding: 12px;
+
+    top: 0;
+    left: 0;
+
+    
     text-align: center;
     justify-content: space-between;
     align-items: center;
     
-    background-color: aliceblue;
-}
-#navbar > .item {}
-#navbar > .item > a {}
-
-.grouper {
-    display: flex;
-    align-self: flex-end;
-    justify-content: center;
-    gap: 6px;
+    background-color: rgba(220, 220, 220, 0.63);
+    z-index: 2;
 }
 
-
-/* Introdução */
-#introducao 
-{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    word-wrap: break-word;
-}
-#introducao > main {
-    max-width: 500px;
-}
-
-#introducao > aside {
-    float: right;
-    clear: left;
-}
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
@@ -67,9 +50,6 @@
 @media only screen and (min-width: 768px) {
     #Logo {
         order: 0;
-    }
-    .grouper label{
-        display:none;
     }
 }
 /* PC desktop */
