@@ -23,12 +23,25 @@
                 
 
             <aside status="hidden" id="sidebar">
-                <section>
-
+                
+                
+                <section class="item" title="+55 51 99887-7538" >
+                    <a href="https://wa.me/5551998877538" target="_blank ">
+                        <img alt="Logo Whatsapp"
+                            src="./assets/icons/Whatsapp.svg"
+                            aria-label="Logo Whatsapp" width="32" height="32">
+                        <label translation="myWhatsapp">My Whatszapp</label>
+                    </a>
                 </section>
-                
-                
-                    <section class="item" style="order: 3;"
+                <section class="item" title="lmedeiros045@gmail.com" >
+                    <a href="mailto:lmedeiros045@gmail.com" target="_blank">
+                        <img alt="Logo Email"
+                            src="./assets/icons/email.svg"
+                            aria-label="Logo Email" width="24" height="24">
+                        <label translation="myEmail">My Email</label>
+                    </a>
+                </section>
+                <section class="item"
                     title="https://github.com/Lmedeiros-leiman">
                     <a href="https://github.com/Lmedeiros-leiman"
                         target="_blank"
@@ -38,7 +51,7 @@
                         <label translation="myGithub">My GitHub</label>
                     </a>
                 </section>
-                <section class="item" style="order: 4;"
+                <section class="item"
                     title="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/">
                     <a
                         href="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/"
@@ -49,21 +62,12 @@
                         <label translation="myLinkedin">Meu Linkedin</label>
                     </a>
                 </section>
-                <section class="item" title="+55 51 99887-7538" style="order: 1;">
-                    <a href="https://wa.me/5551998877538" target="_blank ">
-                        <img alt="Logo Whatsapp"
-                            src="./assets/icons/Whatsapp.svg"
-                            aria-label="Logo Whatsapp" width="32" height="32">
-                        <label translation="myWhatsapp">My Whatszapp</label>
-                    </a>
-                </section>
-                <section class="item" title="lmedeiros045@gmail.com" style="order: 2;">
-                    <a href="mailto:lmedeiros045@gmail.com" target="_blank">
-                        <img alt="Logo Email"
-                            src="./assets/icons/email.svg"
-                            aria-label="Logo Email" width="24" height="24">
-                        <label translation="myEmail">My Email</label>
-                    </a>
+                
+                <section >
+                    <select id="language-selector">
+                        <option value="en"> 🇬🇧 English</option>
+                        <option value="pt"> 🇧🇷 Portuguese</option>
+                    </select>
                 </section>
                 
                 
@@ -126,6 +130,7 @@
         <script src="./js/main.js"></script>
         <script src="./js//globalFunctions.js"></script> 
         
+        <script src="./js/LanguagePicker.js"></script>
         <script src="./js/NavBarBurguer.js"></script>
         <script src="./js/TranslationHandler.js" defer></script>
         

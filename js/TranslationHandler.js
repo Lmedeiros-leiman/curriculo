@@ -1,14 +1,22 @@
 
-function TrocarLinguagem() {
+const TranslationHandler = (() => {
     const TrasnlatableElements = document.querySelectorAll("[translation]")
-
+    const languagePicker = document.querySelector("#language-selector")
+    // we change language accordingly to what the user chooses.
+    languagePicker.onchange = (self) => {
+        self.target.disabled = true
+        ChangePageLanguage(self.target.value).then( () => {
+            self.target.disabled = false
+        })
+    }
 
     // we fetch the translation documents from the repository
-    fetch("/languages/"+userLanguage+".json")
+    async function ChangePageLanguage(TargetLanguage = userLanguage) {
+    fetch("/languages/"+TargetLanguage+".json")
         .then(Response => { 
             
             if (Response.status === 200) {
-                Response.json().then( JsonData => ChangeTexts(JsonData) )
+                Response.json().then( JsonData => ChangeTexts(JsonData, TargetLanguage) )
             } else {
                 // if we don't find the user default languange we fetch english by default.
                 console.log("User default languages not found, fetching english. |"+ userLanguage)
@@ -18,11 +26,11 @@ function TrocarLinguagem() {
             }
         })
         .catch(Error => {console.log(Error)})
-    
+    }
+    // we fetch all the trasnlatable elements and change their text contents.
     function ChangeTexts(JsonPackage, Language = userLanguage) {
         console.log("Changing Page language to "+ Language)
-        
-        console.log(JsonPackage)
+
         TrasnlatableElements.forEach(element => {
             let ElementTextKey = element.getAttribute("translation")
             JsonPackage[ElementTextKey] ? element.textContent = JsonPackage[ElementTextKey] : "MISSING TEXT AT KEY:" +ElementTextKey
@@ -30,9 +38,9 @@ function TrocarLinguagem() {
 
     }
 
-
-}
-TrocarLinguagem()
+    // and we execute it once the script is loaded (we assume the page is already fully loaded.)
+    ChangePageLanguage()
+})()
 
 
 
