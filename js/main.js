@@ -11,6 +11,6 @@ const Navbar = document.querySelector("navbar")
 
 
 //
-const userLanguage = navigator.language || navigator.userLanguage; 
+const userLanguage = navigator.language.split("-")[0] || navigator.userLanguage.split("-")[0] 
 // TODO: adicionar checagem de linguagem e mudar conforme a localidade do usuário
 // por padrão adicionar portugues e ingles.
