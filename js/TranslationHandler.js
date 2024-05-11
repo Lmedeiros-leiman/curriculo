@@ -25,7 +25,7 @@ function TrocarLinguagem() {
         console.log(JsonPackage)
         TrasnlatableElements.forEach(element => {
             let ElementTextKey = element.getAttribute("translation")
-            element.textContent = JsonPackage[ElementTextKey]
+            JsonPackage[ElementTextKey] ? element.textContent = JsonPackage[ElementTextKey] : "MISSING TEXT AT KEY:" +ElementTextKey
         })
 
     }
