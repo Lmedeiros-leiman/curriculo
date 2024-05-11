@@ -1,42 +1,35 @@
 
-
-console.log(userLanguage)
-
-function TrocarLinguagem() { // this is going to become an annonymous function.
+function TrocarLinguagem() {
     const TrasnlatableElements = document.querySelectorAll("[translation]")
+
+
     // we fetch the translation documents from the repository
-    const TranslationDocuments = (() => {
-
-
-        return 1
-    })()
-    const TranslationDocument = new XMLHttpRequest()
-    // prepare the ajax call
-    TranslationDocument.open("GET","/languages/"+userLanguage+".json")
-    TranslationDocument.send()
-
-    // if the user translation doesnt exist we fetch the english translation.
-    TranslationDocument.onerror = (ErrorMesage) => {
-        TranslationDocument.open("GET","/languages/en.json")
-        TranslationDocument.send()
-     }
-
-    // when it arives, we load the texts.
-    TranslationDocument.onreadystatechange = (Request) => {
-        if (Request.readyState === 4) 
-            {
-                console.log(Request)
-                document.write(Request.response)
+    fetch("/languages/"+userLanguage+".json")
+        .then(Response => { 
+            
+            if (Response.status === 200) {
+                Response.json().then( JsonData => ChangeTexts(JsonData) )
+            } else {
+                // if we don't find the user default languange we fetch english by default.
+                console.log("User default languages not found, fetching english. |"+ userLanguage)
+                fetch("/languages/en.json")
+                .then( Response =>{Response.json().then(JsonPackage => { ChangeTexts(JsonPackage, "en") })})
+                .catch(Error => {console.log(Error)})
             }
-        
-        
-    }
-    /*
-    fetch("/languages/en.json")
-    .then(Response => {console.log(Response)})
-    .catch(error => console.log(error))
-    */
+        })
+        .catch(Error => {console.log(Error)})
     
+    function ChangeTexts(JsonPackage, Language = userLanguage) {
+        console.log("Changing Page language to "+ Language)
+        
+        console.log(JsonPackage)
+        TrasnlatableElements.forEach(element => {
+            let ElementTextKey = element.getAttribute("translation")
+            element.textContent = JsonPackage[ElementTextKey]
+        })
+
+    }
+
 
 }
 TrocarLinguagem()
