@@ -12,7 +12,7 @@ const TranslationHandler = (() => {
 
     // we fetch the translation documents from the repository
     async function ChangePageLanguage(TargetLanguage = userLanguage) {
-    fetch("/languages/"+TargetLanguage+".json")
+    fetch("./languages/"+TargetLanguage+".json")
         .then(Response => { 
             
             if (Response.status === 200) {
@@ -20,7 +20,7 @@ const TranslationHandler = (() => {
             } else {
                 // if we don't find the user default languange we fetch english by default.
                 console.log("User default languages not found, fetching english. |"+ userLanguage)
-                fetch("/languages/en.json")
+                fetch("./languages/en.json")
                 .then( Response =>{Response.json().then(JsonPackage => { ChangeTexts(JsonPackage, "en") })})
                 .catch(Error => {console.log(Error)})
             }

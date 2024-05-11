@@ -97,6 +97,10 @@
     color:orangered;
 }
 
+#sidebar :last-child {
+    order: -10;
+}
+
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
@@ -117,6 +121,9 @@
         height: min-content;
         background-color: transparent;
         vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+
         transition: none;
         transform: translateY(0) !important;
 
@@ -142,11 +149,15 @@
         padding: 0;
         margin: 0;
     }
+    
     #sidebar a:hover{
         color: orangered;
     }
     #sidebar a:visited{
         color:orangered;
+    }
+    #sidebar :last-child {
+        order: unset;
     }
 
 }
