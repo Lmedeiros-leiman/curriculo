@@ -26,6 +26,8 @@
     min-width: 360px;
     width: 100vw;
 
+    max-height: 60px;
+
     margin: 0 auto 0 auto;
     padding: 12px;
 

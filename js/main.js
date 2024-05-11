@@ -9,6 +9,7 @@ const Hora = Minuto * 60
 const Favmeta = document.querySelector("#favicon")
 const Navbar = document.querySelector("navbar")
 
+
 //
 const userLanguage = navigator.language || navigator.userLanguage; 
 // TODO: adicionar checagem de linguagem e mudar conforme a localidade do usuário
