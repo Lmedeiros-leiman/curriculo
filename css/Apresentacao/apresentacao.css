@@ -63,7 +63,7 @@
 /* Laptop */
 @media only screen and (min-width: 768px) {
     #introducao h1 {
-        font-size: 64px;
+        font: bold max(36px, 4vw) / max(48px,5vw);
     }
     #introducao h2 {
         font-weight: lighter;
