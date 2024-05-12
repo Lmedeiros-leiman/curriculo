@@ -7,12 +7,80 @@
     align-items: center;
     justify-content: center;
     word-wrap: break-word;
-}
-#introducao > main {
-    max-width: 500px;
+
+    height: 90vh;
+    width: 100vw;
 }
 
 #introducao > aside {
     float: right;
     clear: left;
+}
+#introducao > main {
+    background-color: rgb(212, 212, 212,0.66);
+    z-index: 4;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+#introducao h1 {
+    font-size: 48px;
+}
+#introducao h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+#introducao main aside {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.66);
+    padding: 8px 0 8px 0;
+    font-size: 24px;
+
+   
+}
+#introducao address {
+    font-size: small;
+    padding: 0 0 24px 8px;
+    color: rgb(41, 41, 41);
+}
+#introducao a {
+    background-color: rgb(81, 81, 128) ;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    transition: all 0.33s ease-in-out;
+}
+#introducao a:hover 
+{
+    background-color: royalblue;
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Laptop */
+@media only screen and (min-width: 768px) {
+    #introducao h1 {
+        font-size: 64px;
+    }
+    #introducao h2 {
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    #introducao {
+        flex-direction: row;
+        gap: 2rem;
+        margin: 0 80px 0 80px;
+    }
+    #introducao main {
+        max-width: 600px;
+        left: 24px;
+        border-radius: 10px;
+    }
+}
+/* PC desktop */
+@media only screen and (min-width: 1367px) {
+  
 }

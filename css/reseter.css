@@ -21,5 +21,6 @@ html{
 }
 body{
     max-width: 1900px;
+    overflow-x: hidden;
     background-color: white;
 }

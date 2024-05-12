@@ -5,6 +5,9 @@
 @import url(./Apresentacao/apresentacao.css);
 
 
+body > div {
+  scroll-snap-align: start;
+}
 
 /* Mobile */
 /* É o padrão :P */
