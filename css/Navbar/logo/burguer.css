@@ -1,0 +1,68 @@
+#burguer {
+    background-color: transparent;
+    transition: all 0.5 ease-in-out;
+    width: 52px;
+    height: 48px;
+    background-color: transparent;
+
+    border: none;
+    cursor: pointer;
+    order: -10;
+    z-index: 20;
+}
+#burguer > * {
+    
+    position:absolute;
+    width: 52px;
+    height: 12px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* pra quando o menu estiver ABERTO */
+#burguer[state=open] :nth-child(1) {
+    background-color: green;
+    top: 0;
+
+}
+#burguer[state=open] :nth-child(2) {
+    background-color: red;
+}
+#burguer[state=open] :nth-child(3) {
+    bottom: 0;
+    height: 0;
+}
+
+/* pra quando o menu estiver FECHADO */
+#burguer[state=closed] :nth-child(1) {
+    top: 0;
+    background-color: green;
+
+}
+#burguer[state=closed] :nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+}
+#burguer[state=closed] :nth-child(3) {
+    bottom: 0;
+    background-color: yellow;
+}
+
+/* Menu aside */
+
+
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Laptop */
+@media only screen and (min-width: 768px) {
+    #burguer{
+        display: none;
+    }
+}
+/* PC desktop */
+@media only screen and (min-width: 1366px) {
+    
+}

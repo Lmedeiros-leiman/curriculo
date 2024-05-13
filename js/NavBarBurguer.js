@@ -8,7 +8,6 @@ const NavBarBurguer = ( () => {
         const firstBar = BurguerButton.children[0]
         const secondBar = BurguerButton.children[1]
         
-
         if (BurguerButton.getAttribute("state") === "open") 
             {
                 BurguerButton.setAttribute("state","closed")
@@ -19,7 +18,7 @@ const NavBarBurguer = ( () => {
                 secondBar.style.transform = "translateY(-50%)"
 
                 SideBar.setAttribute("status","hidden")
-                SideBar.style.transform = "translateY(0%)"
+                SideBar.style.left = "-110%"
                 
             } 
         else {
@@ -30,17 +29,10 @@ const NavBarBurguer = ( () => {
                 firstBar.style.top = "25%"
                 secondBar.style.top = "25%"
                 secondBar.style.transform = "translateY(100%) rotate(45deg)"
-                SideBar.setAttribute("status","visible")
-
-                SideBar.style.transform = "translateY(100%)"
                 
-
+                SideBar.setAttribute("status","visible")
+                SideBar.style.left = "0"
 
         } 
-
-        
     }
-    
-
-
 })()

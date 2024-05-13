@@ -14,12 +14,25 @@
         <!--barra de navegação -->
         
         <nav id="navbar">
-
             <section id="Logo">
+                <button state="closed" id="burguer">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
                 <main>
                     &ltleonardo>
                 </main>
+
+                <div>
+                    <a href="#projetos" translate="navprojects">Projetos</a>
+                    <a href="#servicos" translate="navservices">Serviços</a>
+                    <a href="#projetos" translate="navblog">Blog</a>
+                </div>
+
             </section>
+
+            
                 
 
             <aside status="hidden" id="sidebar">
@@ -27,59 +40,43 @@
                 
                 <section class="item" title="+55 51 99887-7538" >
                     <a href="https://wa.me/5551998877538" target="_blank ">
-                        <img alt="Logo Whatsapp"
-                            src="./assets/icons/Whatsapp.svg"
+                        <img class="WhatsappLogo" alt="Logo Whatsapp"
+                            src="./assets/icons/navbar-icons/Whatsapp.svg"
                             aria-label="Logo Whatsapp" width="32" height="32">
                         <label translation="myWhatsapp">My Whatszapp</label>
                     </a>
-                </section>
-                <section class="item" title="lmedeiros045@gmail.com" >
-                    <a href="mailto:lmedeiros045@gmail.com" target="_blank">
-                        <img alt="Logo Email"
-                            src="./assets/icons/email.svg"
-                            aria-label="Logo Email" width="24" height="24">
-                        <label translation="myEmail">My Email</label>
-                    </a>
-                </section>
+                </section>               
                 <section class="item"
                     title="https://github.com/Lmedeiros-leiman">
-                    <a href="https://github.com/Lmedeiros-leiman"
-                        target="_blank"
-                        aria-label="Link para meu gitbu">
-                        <img alt="Logo GitHub" src="./assets/icons/GitHub.svg"
-                            aria-label="Icone do GitHub" width="32" height="32">
+                    <a class="GithubLogo" href="https://github.com/Lmedeiros-leiman"
+                        target="_blank">
+                        <img alt="Logo GitHub" src="./assets/icons/navbar-icons/GitHub.svg"
+                            aria-label="Icone do GitHub">
                         <label translation="myGithub">My GitHub</label>
                     </a>
                 </section>
                 <section class="item"
                     title="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/">
-                    <a
+                    <a class="LinkedinLogo"
                         href="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/"
                         target="_blank">
                         <img alt="Logo Linkedin"
-                            src="./assets/icons/Linkedin.svg"
-                            aria-label="Logo Linkedin" width="32" height="32">
-                        <label translation="myLinkedin">Meu Linkedin</label>
+                            src="./assets/icons/navbar-icons/Linkedin.svg"
+                            aria-label="Logo Linkedin">
+                        <label translation="myLinkedin">My Linkedin</label>
                     </a>
                 </section>
                 
                 <section >
                     <select id="language-selector">
                         <option value="en"> 🇬🇧 English</option>
-                        <option value="pt"> 🇧🇷 Portuguese</option>
+                        <option value="pt"> 🇧🇷 Português</option>
                     </select>
                 </section>
                 
                 
                 
             </aside>
-
-            <button state="closed" id="burguer">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-            </button>
-
 
         </nav>
         <!-- Landing/Introdução -->
@@ -90,8 +87,8 @@
                 <aside translation="jobtittle">Engenheiro de Software</aside>
 
                 <address>
-                    Gaucho iniciante na área ofereco serviços para soluções web, equilibrando entre estudante e desenvolvedor.
-                    Ofereço soluções personalizadas e estou sempre pronto para transformar suas ideias em sucesso. Adoraria te auxiliar a criar uma presença online marcante.
+                    Gaucho iniciante na área ofereco serviços para soluções web.
+                    Ofereço soluções personalizadas e estou pronto para tirar suas ideias do papel.
                 </address>
                 
                 <a class="button" translate="talktome" href="https://wa.me/5551998877538" title=" Whatsapp | +55 51 99887-7538" target="_blank ">
@@ -100,21 +97,53 @@
                 
             </main>
             <aside>
-                <img width="100%" height="380" src="./assets/img/fotoIntro.jpg" alt="Foto apresentação">
+                <img width="100%" height="200px" src="./assets/img/fotoIntro.jpg" alt="Foto apresentação">
             </aside>
         </div>
+        
+        
+        
         <!--Listinha de tecnologias que gosto de usar, coisa simples -->
-        <div>
-            <aside>
-                <small>Minha stack de tecnologias</small>
-                <main>
-                    <div></div>
+        <div class="tech-list">
+            <h2 translate="myTechList">Minha lista de tecnologias</h2>
+
+                <main style="display: flex; justify-content: center; flex-wrap: wrap;">
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    <div title="PHP">
+                        <img style="max-width: 80px;" height="100%" width="100%" src="/assets/icons/languages/php.svg">
+                    </div>
+                    
                 </main>
                 <small>Tecnologias que possuo conhecimento de uso</small>
                 <aside>
                     <div></div>
                 </aside>
-            </aside>
         </div>
         <!--Projetos que eu ja fiz -->
         <div>

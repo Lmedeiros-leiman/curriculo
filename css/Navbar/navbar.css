@@ -1,27 +1,10 @@
+@import url(./logo.css);
 @import url(./burguer.css);
 @import url(./translatormenu.css);
-
-#Logo {
-    font-family: "Ubuntu Mono",monospace;
-
-    font-style: italic;
-    height: fit-content;
-    height: fit-content;
-    padding: 0.6rem;
-    border-radius: 9999px;
-    font-size: x-large;
-    font-weight: bold;
-    z-index: 10;
-    order: 10;
-
-    cursor: context-menu;
-}
-
+@import url(./iconStyles/iconStyles.css);
 
 #navbar {
-    
-    position:fixed;
-
+    position:relative;
     display: flex;
     
     min-width: 360px;
@@ -39,14 +22,15 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    
-    background-color: rgba(220, 220, 220, 0.63);
-    
-    z-index: 2;
-
-    box-shadow: 0px 0px 10px black;
 }
 
+#navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: large;
+
+}
 
 /* Tablet */
 @media only screen and (min-width: 600px) {

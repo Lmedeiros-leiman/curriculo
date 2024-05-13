@@ -1,8 +1,8 @@
-@import url(../assets/fonts/fontImports.css);
 @import url(./reseter.css);
 
-@import url(./Navbar/navbar.css);
+@import url(./Navbar/main.css);
 @import url(./Apresentacao/apresentacao.css);
+
 
 
 body > div {

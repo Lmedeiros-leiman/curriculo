@@ -1,0 +1,40 @@
+@import url(./burguer.css);
+
+#Logo {
+    display: flex;
+    
+    align-items: center;
+}
+
+#Logo main {
+    font-family: "Ubuntu Mono",monospace;
+
+    font-style: italic;
+    height: fit-content;
+    height: fit-content;
+    padding: 0.6rem;
+    font-size: x-large;
+    font-weight: bold;
+
+    cursor: context-menu;
+}
+#Logo > div 
+{
+    display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Laptop */
+@media only screen and (min-width: 768px) {
+    #Logo div 
+    {
+        display: block;
+    }
+}
+/* PC desktop */
+@media only screen and (min-width: 1366px) {
+    
+}

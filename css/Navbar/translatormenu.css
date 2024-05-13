@@ -1,4 +1,29 @@
 /* To surpreso com o quão bom ele ficou no estilo natural. */
 #language-selector {
-    padding: 1rem;
+    padding: 0.20rem;
+    font-size: 1.8rem;
+    border: 2px solid rgba(0, 0, 0, 0.66);
+    border-radius: 4px;
+    background-color: whitesmoke;
+    transition: all 0.33s ease-in-out;
+    cursor: pointer;
+}
+#language-selector:focus ,#language-selector:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Laptop */
+@media only screen and (min-width: 768px) {
+    #language-selector {
+       font-size:medium;
+    }
+}
+/* PC desktop */
+@media only screen and (min-width: 1366px) {
+    
 }

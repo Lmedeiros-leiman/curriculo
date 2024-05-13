@@ -1,0 +1,13 @@
+#sidebar .item{
+
+}
+#sidebar .item img {
+    width: 32px;
+    height: 32px;
+}
+
+.WhatsappLogo{
+    color: green;
+    fill: green;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
