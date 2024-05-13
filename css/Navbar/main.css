@@ -1,7 +1,8 @@
-@import url(navbar.css);
+@import url(./navbar.css);
 
-@import url(logo/main.css);
-@import url(translatormenu.css);
+@import url(./logo/main.css);
+@import url(./logo/burguer.css);
+@import url(./translatormenu.css);
 
 
 @import url(./AsideContent/main.css);

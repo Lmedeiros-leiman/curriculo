@@ -1,7 +1,63 @@
-
-
-
 /* Introdução */
+#introducao 
+{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+#introducao aside {
+    display: none;
+}
+
+#introducao > main {
+    max-width: 400px;
+    
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+#introducao h1 {
+    font: bold max(36px, 4vw) / max(48px,5vw);
+}
+#introducao h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+#introducao main aside {
+    font-family: "Ubuntu Mono",monospace;
+    font-weight: bold;
+    color: rgb(125, 126, 129);
+    padding: 8px 0 8px 0;
+    font-size: medium;
+    padding-block: 16px;
+}
+#introducao address {
+    font-size: small;
+    padding: 0 0 24px 16px;
+    color: rgb(41, 41, 41);
+}
+#introducao a {
+    background-color: rgb(202, 9, 48) ;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px;
+    padding-inline: 32px;
+    transition: all 0.33s ease-in-out;
+
+    width: fit-content;
+    
+    display: flex;
+    flex-wrap: nowrap;
+}
+#introducao a:hover 
+{
+    background-color: royalblue;
+}
+
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
@@ -9,7 +65,15 @@
 }
 /* Laptop */
 @media only screen and (min-width: 768px) {
-    
+    #introducao > aside {
+        display: block;
+        width: 40vw;
+        min-width: 300px;
+    }
+    #introducao > main {
+        align-items: center;
+        justify-content: center;
+    }
 }
 /* PC desktop */
 @media only screen and (min-width: 1367px) {
