@@ -4,10 +4,36 @@
 #sidebar .item img {
     width: 32px;
     height: 32px;
+    transition: all 0.3s ease-in-out;
 }
 
 .WhatsappLogo{
-    color: green;
-    fill: green;
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    filter: invert(23%) sepia(81%) saturate(3596%) hue-rotate(105deg) brightness(89%) contrast(91%);
+
+    
+}
+.WhatsappLogo:hover{
+    filter: invert(22%) sepia(69%) saturate(2073%) hue-rotate(94deg) brightness(94%) contrast(94%);
+    background-color: rgba(163, 165, 18, 0.726);
+
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+}
+
+.GithubLogo{
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+    border-radius: 9999px;
+}
+.GithubLogo:hover{
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+    background-color: rgb(194, 190, 190);
+}
+
+.LinkedinLogo{
+    filter: invert(29%) sepia(96%) saturate(1077%) hue-rotate(171deg) brightness(96%) contrast(89%);
+}
+.LinkedinLogo:hover{
+    border-radius: 12px;
+    background-color: green ;
 }
