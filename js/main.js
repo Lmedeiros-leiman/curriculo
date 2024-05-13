@@ -9,6 +9,8 @@ const Hora = Minuto * 60
 const Favmeta = document.querySelector("#favicon")
 const Navbar = document.querySelector("navbar")
 
+// definições variaveis globais
+let FaviconIntervalID;
 
 //
 let userLanguage = navigator.language.split("-")[0] || navigator.userLanguage.split("-")[0] 
