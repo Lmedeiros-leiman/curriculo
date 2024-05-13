@@ -1,4 +1,6 @@
 #burguer {
+    position: fixed;
+    
     background-color: transparent;
     transition: all 0.5 ease-in-out;
     width: 52px;
@@ -59,6 +61,7 @@
 /* Laptop */
 @media only screen and (min-width: 768px) {
     #burguer{
+        position: relative;
         display: none;
     }
 }

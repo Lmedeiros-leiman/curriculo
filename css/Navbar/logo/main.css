@@ -16,10 +16,21 @@
     font-size: x-large;
     font-weight: bold;
 
+    padding-left: 60px;
+
     cursor: context-menu;
+
 }
+#Logo div a {
+    padding-inline: 4px;
+}
+#Logo div a:hover {
+    color: blueviolet;
+}
+
 #Logo > div 
 {
+    padding-left: 64px;
     display: none;
 }
 
@@ -29,6 +40,9 @@
 }
 /* Laptop */
 @media only screen and (min-width: 768px) {
+    #Logo main {
+        padding-left: 0;
+    }
     #Logo div 
     {
         display: block;

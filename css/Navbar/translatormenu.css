@@ -1,5 +1,6 @@
 /* To surpreso com o quão bom ele ficou no estilo natural. */
 #language-selector {
+    margin-left: 4rem;
     padding: 0.20rem;
     font-size: 1.8rem;
     border: 2px solid rgba(0, 0, 0, 0.66);
@@ -20,7 +21,7 @@
 /* Laptop */
 @media only screen and (min-width: 768px) {
     #language-selector {
-       font-size:medium;
+        font-size:medium;
     }
 }
 /* PC desktop */
