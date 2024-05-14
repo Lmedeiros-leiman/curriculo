@@ -1,0 +1,14 @@
+#footer {
+    padding-block: 16px;
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#footer a {
+    color: aqua;
+    
+}
+#footer a:hover{
+    color: blue;
+}

@@ -1,12 +1,17 @@
 {
     "web-title": "Meu Portifólio",
+    "navprojects":"Projetos",
+    "navservices":"Serviços",
+    "navblog":"Blog",
+    "aboutme":"Programador iniciante de Porto Alegre, pronto para mergulhar no universo do desenvolvimento web. Ofereço serviços especializados em soluções personalizadas, dedicado a transformar suas ideias em realidade. Vamos juntos dar vida aos seus projetos! ",
     "myLinkedin":"Meu Linkedin",
     "myGithub":"Meu Github",
     "myWhatsapp":"Meu Whatsapp",
     "myEmail":"Meu Email",
     "hello":"Olá, eu sou o",
     "jobtittle":"Engenheiro de Software",
-    "talktome":"Converse Comigo!"
-
+    "talktome":"Converse Comigo!",
+    "myTechList":"Minha lista de conhecimentos:",
+    "meetProjects":"Conheça alguns projetos meus!"
 
 }

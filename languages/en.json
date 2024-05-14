@@ -1,12 +1,18 @@
 {
-    "web-title": "My Portfolio",
-    "myLinkedin":"My Linkedin",
-    "myGithub":"My Github",
-    "myWhatsapp":"My Whatsapp",
-    "myEmail":"My Email",
+    "web-title": "My Portfolio.",
+    "navprojects":"Projects",
+    "navservices":"Services",
+    "navblog":"Blog",
+    "aboutme":"Novice programmer from Porto Alegre, eager to immerse into the realm of web development. Offering specialized services in tailored solutions, dedicated to bringing your ideas to life. Let's work together to turn your projects into reality!",
+    "myLinkedin":"My Linkedin.",
+    "myGithub":"My Github.",
+    "myWhatsapp":"My Whatsapp.",
+    "myEmail":"My Email.",
     "hello":"Hello! i'm the",
-    "jobtittle":"Software Engineer",
-    "talktome":"Contact me!"
+    "jobtittle":"Software Engineer.",
+    "talktome":"Contact me!",
+    "myTechList":"My Stack and skills:",
+    "meetProjects":"Meet some of my projects!"
 
 
 }

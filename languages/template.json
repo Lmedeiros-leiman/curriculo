@@ -1,12 +1,16 @@
 {
     "web-title": "PLACEHOLDER",
+    "navprojects":"PLACEHOLDER",
+    "navservices":"PLACEHOLDER",
+    "navblog":"PLACEHOLDER",
+    "aboutme":"PLACEHOLDER",
     "myLinkedin":"PLACEHOLDER",
     "myGithub":"PLACEHOLDER",
     "myWhatsapp":"PLACEHOLDER",
     "myEmail":"PLACEHOLDER",
     "hello":"PLACEHOLDER",
     "jobtittle":"PLACEHOLDER",
-    "talktome":"PLACEHOLDER"
-
-
+    "talktome":"PLACEHOLDER",
+    "myTechList":"PLACEHOLDER",
+    "meetProjects":"PLACEHOLDER"
 }

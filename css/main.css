@@ -4,7 +4,7 @@
 @import url(./Apresentacao/main.css);
 @import url(./Habilidades/main.css);
 
-
+@import url(./footer/main.css);
 
 body > div {
   scroll-snap-align: start;
