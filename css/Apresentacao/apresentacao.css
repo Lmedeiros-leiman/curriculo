@@ -21,21 +21,24 @@
 }
 #introducao h1 {
     font: bold max(36px, 4vw) / max(48px,5vw);
+    padding-bottom: max(8px, 1vw);
 }
 #introducao h2 {
     font-weight: lighter;
-    font-size: 30px;
+    font: max(36px, 4vw) / max(48px,5vw);
 }
 #introducao main aside {
     font-family: "Ubuntu Mono",monospace;
     font-weight: bold;
+    font: max(36px, 4vw) / max(48px,5vw);
+
     color: rgb(125, 126, 129);
     padding: 8px 0 8px 0;
-    font-size: medium;
+    
     padding-block: 16px;
 }
 #introducao address {
-    font-size: small;
+    font: max(36px, 4vw) / max(48px,5vw);
     padding: 0 0 24px 16px;
     color: rgb(41, 41, 41);
 }

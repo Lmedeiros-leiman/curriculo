@@ -1,0 +1,34 @@
+#techShowcase{
+    display: block;
+    padding-top: 2rem;
+}
+#techShowcase h2{
+    text-align: center;
+    color: gray;
+    font-size: medium;
+}
+#techShowcase main{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+#techShowcase main img{
+    width: 128px;
+    vertical-align: middle;
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    #techShowcase{
+        padding-top: 1rem;
+    }
+}
+/* Laptop */
+@media only screen and (min-width: 768px) {
+    
+}
+/* PC desktop */
+@media only screen and (min-width: 1367px) {
+    
+}
