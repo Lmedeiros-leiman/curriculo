@@ -1,165 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title translation="web-title">My Portfolio</title>
-        <link rel="icon" id="favicon" type="image/x-icon"
-            href="assets/icons/favicon.ico">
-        <link type="text/css" rel="stylesheet" href="css/main.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title translation="web-title">My Portfolio</title>
+    <link rel="icon" id="favicon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
 
-    <body>
-        <!--barra de navegação -->
-        
-        <nav id="navbar">
-            <section id="Logo">
-                <button state="closed" id="burguer">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
-                <main>
-                    &ltleonardo>
-                </main>
+<body>
+    <!--barra de navegação -->
 
-                <div>
-                    <a href="#projetos" translate="navprojects">Projetos</a>
-                    <a href="#servicos" translate="navservices">Serviços</a>
-                    <a href="#projetos" translate="navblog">Blog</a>
-                </div>
+    <nav id="navbar">
+        <section id="Logo">
+            <button state="closed" id="burguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <main>
+                &ltleonardo>
+            </main>
 
+            <div>
+                <a href="#projetos" translate="navprojects">Projetos</a>
+                <a href="#servicos" translate="navservices">Serviços</a>
+                <a href="#projetos" translate="navblog">Blog</a>
+            </div>
+
+        </section>
+
+
+
+
+        <aside status="hidden" id="sidebar">
+
+            <section class="item" title="+55 51 99887-7538">
+                <a href="https://wa.me/5551998877538" target="_blank ">
+                    <img class="WhatsappLogo" alt="Logo Whatsapp" src="./assets/icons/navbar-icons/Whatsapp.svg"
+                        aria-label="Logo Whatsapp">
+                    <label translation="myWhatsapp">My Whatszapp</label>
+                </a>
+            </section>
+            <section class="item" title="https://github.com/Lmedeiros-leiman">
+                <a class="GithubLogo" href="https://github.com/Lmedeiros-leiman" target="_blank">
+                    <img alt="Logo GitHub" src="./assets/icons/navbar-icons/GitHub.svg" aria-label="Icone do GitHub">
+                    <label translation="myGithub">My GitHub</label>
+                </a>
+            </section>
+            <section class="item" title="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/">
+                <a class="LinkedinLogo" href="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/"
+                    target="_blank">
+                    <img alt="Logo Linkedin" src="./assets/icons/navbar-icons/Linkedin.svg" aria-label="Logo Linkedin">
+                    <label translation="myLinkedin">My Linkedin</label>
+                </a>
             </section>
 
-            
-                
+            <section>
+                <select id="language-selector">
+                    <option value="en"> 🇬🇧 English</option>
+                    <option value="pt"> 🇧🇷 Português</option>
+                </select>
+            </section>
 
-            <aside status="hidden" id="sidebar">
-                
-                <section class="item" title="+55 51 99887-7538" >
-                    <a href="https://wa.me/5551998877538" target="_blank ">
-                        <img class="WhatsappLogo" alt="Logo Whatsapp"
-                            src="./assets/icons/navbar-icons/Whatsapp.svg"
-                            aria-label="Logo Whatsapp">
-                        <label translation="myWhatsapp">My Whatszapp</label>
-                    </a>
-                </section>               
-                <section class="item"
-                    title="https://github.com/Lmedeiros-leiman">
-                    <a class="GithubLogo" href="https://github.com/Lmedeiros-leiman"
-                        target="_blank">
-                        <img alt="Logo GitHub" src="./assets/icons/navbar-icons/GitHub.svg"
-                            aria-label="Icone do GitHub">
-                        <label translation="myGithub">My GitHub</label>
-                    </a>
-                </section>
-                <section class="item"
-                    title="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/">
-                    <a class="LinkedinLogo"
-                        href="https://www.linkedin.com/in/leonardo-medeiros-leiman-b5a60821a/"
-                        target="_blank">
-                        <img alt="Logo Linkedin"
-                            src="./assets/icons/navbar-icons/Linkedin.svg"
-                            aria-label="Logo Linkedin">
-                        <label translation="myLinkedin">My Linkedin</label>
-                    </a>
-                </section>
-                
-                <section >
-                    <select id="language-selector">
-                        <option value="en"> 🇬🇧 English</option>
-                        <option value="pt"> 🇧🇷 Português</option>
-                    </select>
-                </section>
-                
-            </aside>
+        </aside>
 
-        </nav>
-        <!-- Landing/Introdução -->
-        <div id="introducao">
-            <main>
-                <h2 translation="hello">Olá, eu sou o</h2>
-                <h1>Leonardo Medeiros</h1>
-                <aside translation="jobtittle">Engenheiro de Software</aside>
+    </nav>
+    <!-- Landing/Introdução -->
+    <div id="introducao">
+        <main>
+            <h2 translation="hello">Olá, eu sou o</h2>
+            <h1>Leonardo Medeiros</h1>
+            <aside translation="jobtittle">Engenheiro de Software</aside>
 
-                <address translation="aboutme">
-                    Programador iniciante de Porto Alegre, pronto para mergulhar no universo do desenvolvimento web. 
-                    Ofereço serviços especializados em soluções personalizadas, dedicado a transformar suas ideias em realidade. 
-                    Vamos juntos dar vida aos seus projetos!
-                </address>
-                
-                <a class="button" translation="talktome" href="https://wa.me/5551998877538" title=" Whatsapp | +55 51 99887-7538" target="_blank ">
-                    Converse Comigo
-                </a>
-                
-            </main>
-            <aside>
-                <img width="100%" height="100%" src="./assets/img/fotoIntro.jpg" alt="Foto apresentação">
-            </aside>
-        </div>
-        
-        
-        
-        <!--Listinha de tecnologias que gosto de usar, coisa simples -->
-        <div id="techShowcase">
-            <h2 translation="myTechList">Minha lista de conhecimentos</h2>
+            <address translation="aboutme">
+                Programador iniciante de Porto Alegre, pronto para mergulhar no universo do desenvolvimento web.
+                Ofereço serviços especializados em soluções personalizadas, dedicado a transformar suas ideias em
+                realidade.
+                Vamos juntos dar vida aos seus projetos!
+            </address>
 
-                <main style="display: flex; justify-content: center; flex-wrap: wrap;">
-                    <div class="php"  title="PHP">
-                        <img src="./assets/icons/languages/php.svg">
-                    </div>
-                    <div title="Javascript">
-                        <img src="./assets/icons/languages/javascript.svg">
-                    </div>
-                    <div title="MySQL">
-                        <img src="./assets/icons/languages/mysql.svg">
-                    </div>
-                    <div title="C#">
-                        <img src="./assets/icons/languages/CMicrosoft.svg">
-                    </div>
-                    <div title="Git">
-                        <img src="./assets/icons/languages/git.svg">
-                    </div>
-                    <div title="WordPress">
-                        <img src="./assets/icons/languages/wordpress.svg">
-                    </div>
-                    
-                    
-                </main>
-                
-        </div>
-        <!--Projetos que eu ja fiz -->
-        <div id="projects">
-            <table>
-                <thead>
-                    <td translation="meetProjects">
-                        Conheça alguns de meus projetos
-                    </td>
-                </thead>
-                <tr>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-        <!--Rodapé -->
-        <footer id="footer">
-            <div>
-                <a translation="freepikthanks" href="https://br.freepik.com/" target="_blank">Obrigado a FreePik pela imagem de apresentação :)</a>
+            <a class="button" translation="talktome" href="https://wa.me/5551998877538"
+                title=" Whatsapp | +55 51 99887-7538" target="_blank ">
+                Converse Comigo
+            </a>
+
+        </main>
+        <aside>
+            <img width="100%" height="100%" src="./assets/img/fotoIntro.jpg" alt="Foto apresentação">
+        </aside>
+    </div>
+
+
+
+    <!--Listinha de tecnologias que gosto de usar, coisa simples -->
+    <div id="techShowcase">
+        <h2 translation="myTechList">Minha lista de conhecimentos</h2>
+
+        <main style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <div class="php" title="PHP">
+                <img src="./assets/icons/languages/php.svg">
             </div>
-        </footer>
+            <div class="javascript" title="Javascript">
+                <img src="./assets/icons/languages/javascript.svg">
+            </div>
+            <div class="sql" title="MySQL">
+                <img src="./assets/icons/languages/mysql.svg">
+            </div>
+            <div class="csharp" title="C#">
+                <img src="./assets/icons/languages/CMicrosoft.svg">
+            </div>
+            <div class="git" title="Git">
+                <img src="./assets/icons/languages/git.svg">
+            </div>
+            <div class="wordpress" title="WordPress">
+                <img src="./assets/icons/languages/wordpress.svg">
+            </div>
 
-        <!-- Scripts Javascript -->
-        
-        <script src="./js/main.js"></script>
-        <script src="./js//globalFunctions.js"></script> 
-        
-        <script src="./js/NavBarBurguer.js"></script>
-        <script src="./js/faviconChange.js"></script>
-        <script src="./js/TranslationHandler.js" https://github.com/Lmedeiros-leiman/curriculo></script>
-        
-        <script src="./js/eventsHandler.js"></script>
 
-    </body>
+        </main>
+
+    </div>
+    <!--Projetos que eu ja fiz -->
+    <div id="projects">
+        <table>
+            <thead>
+                <td translation="meetProjects">
+                    Conheça alguns de meus projetos
+                </td>
+            </thead>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <!--Rodapé -->
+    <footer id="footer">
+        <div>
+            <a translation="freepikthanks" href="https://br.freepik.com/" target="_blank">Obrigado a FreePik pela imagem
+                de apresentação :)</a>
+        </div>
+    </footer>
+
+    <!-- Scripts Javascript -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js//globalFunctions.js"></script>
+
+    <script src="./js/NavBarBurguer.js"></script>
+    <script src="./js/faviconChange.js"></script>
+    <script src="./js/TranslationHandler.js" https://github.com/Lmedeiros-leiman/curriculo></script>
+
+    <script src="./js/eventsHandler.js"></script>
+
+</body>
 
 </html>

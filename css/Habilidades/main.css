@@ -6,14 +6,45 @@
     text-align: center;
     color: gray;
     font-size: medium;
+    padding-bottom: 8px;
 }
 #techShowcase main{
     display: flex;
     gap: 1vw;
     align-items: center;
 }
+#techShowcase main div{
+    padding-inline: 8px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+#techShowcase main div.php:hover{
+    background-color: rgba(88, 79, 172, 0.575);
+}
+#techShowcase main div.javascript:hover{
+    background-color: rgba(209, 221, 40, 0.575);
+}
+
+#techShowcase main div.sql:hover{
+    background-color: rgba(0, 255, 255, 0.349);
+}
+
+#techShowcase main div.csharp:hover{
+    background-color: rgba(79, 172, 118, 0.575);
+}
+#techShowcase main div.git:hover{
+    background-color: rgba(182, 17, 17, 0.575);
+}
+#techShowcase main div.wordpress:hover{
+    background-color: rgba(68, 66, 199, 0.575);
+}
+
+
 #techShowcase main img{
     width: 128px;
+    height: 128px;
     vertical-align: middle;
     
 }
