@@ -11,7 +11,7 @@ const FaviconChange = (action = "blur") => {
             FaviconIntervalID = undefined
             // 1 minuto ainda parece muito agressivo.
             // mas ainda assim, é um detalhe pequeno e facil de perder.
-        }, 1000)
+        }, Minuto)
     } else 
     {
         const CurrentHref = Favmeta.href.split("/")

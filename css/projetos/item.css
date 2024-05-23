@@ -1,0 +1,26 @@
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: 8px;
+}
+#projects > h2 {
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    padding-block: 32px;
+}
+
+#projects > div {
+    max-width: 340px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px black;
+    padding: 8px;
+
+    text-align: center;
+
+}
+#projects > div > address{
+    text-align: left;
+}
