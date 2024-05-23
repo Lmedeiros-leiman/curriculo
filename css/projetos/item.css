@@ -4,12 +4,20 @@
     justify-content: center;
     padding-block: 8px;
 }
+#projects > div > img {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+    box-shadow: 1px 1px 8px rgba(90, 90, 92, 0.75);
+    
+}
+
 #projects > h2 {
     font-weight: lighter;
     width: 100%;
     text-align: center;
     padding-block: 32px;
 }
+
 
 #projects > div {
     max-width: 340px;
@@ -20,7 +28,40 @@
 
     text-align: center;
 
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
 }
+
+#projects > div > h3 {
+    padding-top: 8px;
+}
+
 #projects > div > address{
     text-align: left;
+}
+#projects > div > aside {
+    gap: 8px;
+    width: 100%;
+    padding-top: 8px;
+    display: flex;
+    justify-content: right;
+}
+#projects > div > aside > a {
+    text-decoration: none;
+}
+#projects > div > aside > a.code {
+
+}
+#projects > div > aside > a.code {
+
+}
+
+#projects > div > aside > a.eye {
+
+}
+#projects > div > aside > a.eye {
+
 }
