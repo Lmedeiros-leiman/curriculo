@@ -51,17 +51,19 @@
 }
 #projects > div > aside > a {
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 #projects > div > aside > a.code {
-
+    
+    filter: invert(39%) sepia(27%) saturate(3153%) hue-rotate(205deg) brightness(91%) contrast(94%);
 }
-#projects > div > aside > a.code {
-
+#projects > div > aside > a.code:hover,#projects > div > aside > a.code:focus {
+    filter: invert(10%) sepia(100%) saturate(6652%) hue-rotate(248deg) brightness(88%) contrast(147%);
 }
 
 #projects > div > aside > a.eye {
-
+    filter: invert(15%) sepia(44%) saturate(4340%) hue-rotate(260deg) brightness(105%) contrast(83%);
 }
-#projects > div > aside > a.eye {
-
+#projects > div > aside > a.eye:hover {
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
 }
