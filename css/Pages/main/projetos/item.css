@@ -1,14 +1,11 @@
 #projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-block: 8px;
-}
-#projects > div > img {
-    border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.644);
-    box-shadow: 1px 1px 8px rgba(90, 90, 92, 0.75);
     
+    justify-content: center;
+    
+    padding-bottom: 16px;
+    gap: 24px;
 }
 
 #projects > h2 {
@@ -21,6 +18,7 @@
 
 #projects > div {
     max-width: 340px;
+    min-width: 340px;
     border: 1px solid black;
     border-radius: 8px;
     box-shadow: 1px 1px 8px black;
@@ -29,10 +27,18 @@
     text-align: center;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     flex-wrap: wrap;
 
+}
+#projects > div > img {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+    box-shadow: 1px 1px 8px rgba(90, 90, 92, 0.75);
+    
 }
 
 #projects > div > h3 {
@@ -48,6 +54,8 @@
     padding-top: 8px;
     display: flex;
     justify-content: right;
+
+    margin-top: auto;
 }
 #projects > div > aside > a {
     text-decoration: none;
